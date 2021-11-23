@@ -4,11 +4,11 @@ Create Interactive Documents with Plain Text
 
 ## [Try it](https://reactivedoc.com/editor)
 
-<img src="https://github.com/alexadam/reactive-doc/blob/master/imgs/i1.jpg?raw=true" width="800">
+<img src="https://github.com/alexadam/reactive-doc/blob/main/imgs/i1.jpg?raw=true" width="800">
 
-<img src="https://github.com/alexadam/reactive-doc/blob/master/imgs/i2.jpg?raw=true" width="800">
+<img src="https://github.com/alexadam/reactive-doc/blob/main/imgs/i2.jpg?raw=true" width="800">
 
-<img src="https://github.com/alexadam/reactive-doc/blob/master/imgs/i3.jpg?raw=true" width="800">
+<img src="https://github.com/alexadam/reactive-doc/blob/main/imgs/i3.jpg?raw=true" width="800">
 
 ## How to run it
 
