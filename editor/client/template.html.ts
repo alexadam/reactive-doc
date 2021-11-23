@@ -136,7 +136,7 @@
  
      REPLACE_HTML
  
-     <div>Made with <a class="reactive-doc" href="https://reactivedoc.com/">ReactiveDoc</a></div>
+     <div>Made with <a class="reactive-doc" href="https://reactivedoc.com/" target="_blank">ReactiveDoc</a></div>
    </div>
  
    <script>
