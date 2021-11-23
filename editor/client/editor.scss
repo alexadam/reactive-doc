@@ -1,0 +1,208 @@
+
+$color: #3847AB;
+$menuColor: white;
+$shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+* {
+  box-sizing: border-box;
+}
+
+.rf-editor {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.rf-editor-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.action-button {
+  height: 30px;
+  min-width: 35px;
+  min-height: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  color: $color;
+  outline: 0;
+  border: solid 1px rgba(0,0,0,0);
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgba(0,0,0,0);
+  font-size: 14px;
+  font-family: sans-serif;
+
+  rect, line, path, polygon {
+    stroke: $color;
+  }
+}
+
+.action-button-large {
+  padding: 0 10px;
+}
+
+.color-input-button {
+  background-color: $color;
+}
+
+.action-button:hover {
+  border: solid 1px $color;
+}
+
+.top-menu {
+  width: 100%;
+  height: 35px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  background-color: $menuColor;
+  background-color: rgba(0, 0, 0, 0);
+
+  .left-menu, .right-menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    background-color: rgba(0,0,0,0);
+  }
+
+  .right-menu {
+    justify-content: flex-end;
+  }
+
+  .menu-container {
+    display: flex;
+    flex-direction: row;
+    box-shadow: $shadow;
+    margin-top: 5px;
+    margin-right: 10px;
+    border-radius: 5px;
+    background-color: white;
+  }
+
+  a.title {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: sans-serif;
+    height: 100%;
+    line-height: 35px;
+    vertical-align: middle;
+    padding: 0 5px;
+    color: black;
+    color: $color;
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+  a.title:hover {
+    color: #007fff;
+    color: black;
+  }
+
+  input[type="file"] {
+    display: none;
+  }
+}
+
+.md-input {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  padding: 10px;
+  padding-right: 5px;
+
+  textarea {
+    width: 100%;
+    height: 100%;
+    border: 0; 
+    outline: 0;
+    margin: 0;
+    font-size: 14px;
+    font-family: monospace;
+    padding: 20px;
+    resize: none;
+    overflow-y: auto;
+    background-color: white; // rgba(0,0,0,0);
+    z-index: 1;
+    border-radius: 5px;
+    box-shadow: $shadow;
+
+    scrollbar-width: thin;
+    scrollbar-color: lightgray rgba(0,0,0,0);
+  }
+}
+
+.md-input-menu {
+  width: 45px;
+  height: 360px;
+  margin-left: 10px; margin-top: 10px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+;
+  background-color: $menuColor;
+  border: solid 1px white;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: $shadow;
+
+}
+
+.preview {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  padding-left: 5px;
+}
+
+iframe.preview-frame {
+  width: 100%; height: 100%;
+  outline: none; border: none;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: $shadow;
+  scrollbar-width: thin;
+  scrollbar-color: #6969dd #e0e0e0;
+}
+
+.command-context-menu {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 4px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+
+  button.menu-btn {
+    width: 100%;
+    text-align: left;
+    font-size: 14px;
+    border: none;
+    padding: 5px;
+    background-color: rgba(0,0,0,0);
+    font-size: 16px;
+    color: $color;
+    cursor: pointer;
+  }
+  button.menu-btn:hover {
+    background-color: lightblue;
+  }
+}
